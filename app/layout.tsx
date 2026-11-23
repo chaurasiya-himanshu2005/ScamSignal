@@ -4,10 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_APP_URL ||
-      (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://scam-signal-opal.vercel.app")
-  ),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || "https://scam-signal-opal.vercel.app"),
   title: {
     default: "ScamSignal — Suspicious SMS, WhatsApp & Email Message Analyzer",
     template: "%s | ScamSignal",
